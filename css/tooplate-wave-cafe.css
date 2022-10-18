@@ -78,7 +78,16 @@ h2 { margin-top: 0; }
     height: 160px; 
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+    border-radius: 5px;  
+}
+.search #searchsection{
+    margin-top: 10px;
+    width: 98.8%;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .tm-site-logo { margin-right: 30px; }
@@ -110,6 +119,7 @@ h2 { margin-top: 0; }
     text-decoration: none;
     align-items: center;      
     font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 .tm-page-link:hover,
@@ -127,6 +137,7 @@ h2 { margin-top: 0; }
 .tm-black-bg {
     background-color: rgba(0,0,0,0.6);
     color: white;
+    border-radius: 15px;
 }
 
 .tm-drinks-nav > ul > li { display: inline-block; }
@@ -166,9 +177,10 @@ h2 { margin-top: 0; }
 
 .tm-list-item-img {
     margin-right: 20px;
-    width: 160px;
+    width: 200px;
     height: 160px;
-    background-color: #099;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .tm-list-item-img-big {
@@ -188,10 +200,11 @@ h2 { margin-top: 0; }
     display: flex;
     justify-content: space-between;
     margin-top: 0;
+    color: #099;
 }
 
 .tm-list-item-price { color: #96FEFF; }
- .tm-site-footer { margin-top: -45px; } 
+ .tm-site-footer { margin-top: 25px; } 
 
 .tm-footer-text {
     padding: 10px 65px 10px 20px;
