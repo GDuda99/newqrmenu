@@ -204,7 +204,7 @@ h2 { margin-top: 0; }
 }
 
 .tm-list-item-price { color: #96FEFF; }
- .tm-site-footer { margin-top: 25px; } 
+ .tm-site-footer { margin-top: 25px; margin-left: 40px; } 
 
 .tm-footer-text {
     padding: 10px 65px 10px 20px;
