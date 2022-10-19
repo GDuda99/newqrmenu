@@ -172,6 +172,7 @@ h2 { margin-top: 0; }
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    line-height: 80%;
 }
 
 .tm-drinks-nav > ul > li a.active,
@@ -195,6 +196,7 @@ h2 { margin-top: 0; }
     height: 160px;
     background-color: white;
     border-radius: 10px;
+    zoom: 160%;
 }
 
 .tm-list-item-img-big {
