@@ -93,6 +93,15 @@ h2 { margin-top: 0; }
     text-align: center;
 }
 /*langswitcher*/
+.stars{
+    position: relative;
+    display: flex;
+    margin-left: 70%;
+    top: -35px;
+}
+.checked{
+    color: orange;
+}
 .dropbtn {
     background-color: #2d7070;
     color: white;
