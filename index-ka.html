@@ -22,7 +22,14 @@ https://www.tooplate.com/view/2121-wave-cafe
             <i class="fas fa-coffee fa-3x tm-site-logo"></i>
             <h1 class="tm-site-name">რესტორანი</h1>
           </div>
-          <div class="langswitcher"><a href="index.html"> EN</a></div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">ქართული</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">English</a>
+                <a href="index-de.html">Deutsch</a>
+              <a href="index-ru.html">Русский</a>
+            </div>
+          </div>
           <div class="search">
             <input id="searchsection" type="text" placeholder="ჩაწერეთ საძიებო სიტყვა...">
           </div>
@@ -505,6 +512,26 @@ https://www.tooplate.com/view/2121-wave-cafe
         }
       });
     });
+      
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
       
   </script>
 </body>
