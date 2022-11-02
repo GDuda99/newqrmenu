@@ -429,9 +429,9 @@ input[type=checkbox] {
 }
 /* iphone 12 / 13 pro */
 @media screen and (min-width: 844px) and (max-width: 845px) and (orientation: landscape) {
-    .tm-site-header { width: 205%; }
+    .tm-site-header { width: 220%; }
     .dropbtn { width: 344px; }
-    .rating { font-size: 30px; margin-top: 2px; margin-left: 520px;}
+    .rating { font-size: 30px; margin-top: 2px; margin-left: 570px;}
     #submitForm{ margin-left: 19.5px; font-size: 20px; margin-top: 5px; margin-left: 10px; }
     .tm-site-nav-ul { width: 99%; }
     .tm-black-bg { width: 117%; }
