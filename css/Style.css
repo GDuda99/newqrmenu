@@ -438,6 +438,7 @@ input[type=checkbox] {
     .tm-page-link-icon { margin-right: 15px; }
     .tm-left { width: 45%; }
     .tm-right { width: 55%; }
+    .footerbackground { height: 13%; width: 99.5%; }/*test footer menus horizonti*/
 }
 /* iphone 12 / 13 pro */
 @media screen and (min-width: 844px) and (max-width: 845px) and (orientation: landscape) {
@@ -456,6 +457,7 @@ input[type=checkbox] {
     .tm-page-link-icon { margin-right: 15px; }
     .tm-left { width: 45%; }
     .tm-right { width: 55%; }
+	.footerbackground { height: 13%; width: 99.5%; }/*test footer menus horizonti*/
 }
 /* iphone 12 */
 /* @media screen and (min-width: 844px) and (max-width: 845px) and (orientation: landscape) {
@@ -488,6 +490,7 @@ input[type=checkbox] {
     .tm-page-link-icon { margin-right: 15px; }
     .tm-left { width: 45%; }
     .tm-right { width: 55%; }
+    .footerbackground { height: 13%; width: 99.5%; }/*test footer menus horizonti*/
 }
 @media screen and (min-width: 2340px) and (max-width: 2341px) and (orientation: landscape) {
     .tm-site-header { width: 219%; }
