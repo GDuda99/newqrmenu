@@ -433,7 +433,9 @@ input[type=checkbox] {
     .dropbtn { width: 344px; }
     .rating { font-size: 30px; margin-top: 2px; margin-left: 520px;}
     #submitForm{ margin-left: 19.5px; font-size: 20px; margin-top: 5px; margin-left: 10px; }
-    .tm-site-nav-ul { width: 99%; }
+    /* .tm-site-nav-ul { width: 205%; justify-content: center; } */
+    /* .search { width:204.8%; } */
+    .tm-site-nav-ul { display: flex; flex-wrap: nowrap; justify-content: space-between; }
     .tm-black-bg { width: 117%; }
     .tm-left-inner { max-width: 380px; }
     .tm-site-name { font-size: 2rem; }
@@ -444,7 +446,7 @@ input[type=checkbox] {
     .tm-right { width: 55%; }
 }
 /* iphone 12 */
-@media screen and (min-width: 844px) and (max-width: 845px) and (orientation: landscape) {
+/* @media screen and (min-width: 844px) and (max-width: 845px) and (orientation: landscape) {
     .tm-site-header { width: 205%; }
     .dropbtn { width: 344px; }
     .rating { font-size: 30px; margin-top: 2px; margin-left: 520px;}
@@ -458,7 +460,7 @@ input[type=checkbox] {
     .tm-page-link-icon { margin-right: 15px; }
     .tm-left { width: 45%; }
     .tm-right { width: 55%; }
-}
+} */
 /* galaxy s20-21 ultra */
 @media screen and (min-width: 914px) and (max-width: 916px) and (orientation: landscape) {
     .tm-site-header { width: 223%; }
