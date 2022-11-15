@@ -4,10 +4,12 @@ window.addEventListener('load', () => {
     }
 })
 function openPopup() {
+    console.log('open');
     document.getElementById('test').style.display = 'block';
 }
 
 function closePopup() {
+    console.log(1111);
     document.getElementById('test').style.display = 'none';
 }
 
@@ -132,6 +134,9 @@ window.onclick = function(event) {
 }
 
 /*shefaseba*/
+$('.rating').on('click', function() {
+    openPopup()
+})
 $('.rating').on('click', '.ratings_stars', function () {
   var star = $(this)
   star.addClass('selected')
