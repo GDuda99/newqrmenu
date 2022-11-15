@@ -13,7 +13,6 @@ Tooplate 2121 Restaurant
 https://www.tooplate.com/view/2121-wave-cafe
 -->
 </head>
-<body>
   <div class="tm-container">
     <div class="tm-row">
       <!-- Site Header -->
@@ -23,7 +22,10 @@ https://www.tooplate.com/view/2121-wave-cafe
             <i class="fas fa-coffee fa-3x tm-site-logo"></i>
             <h1 class="tm-site-name">Ресторан</h1>
           </div>
+          </div>
+          <body>
           <div class="dropdown">
+            <div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
             <button onclick="myFunction()" class="dropbtn">Русский</button>
             <div id="myDropdown" class="dropdown-content">
               <a href="index-ka.html#drink">ქართული</a>
@@ -31,26 +33,21 @@ https://www.tooplate.com/view/2121-wave-cafe
               <a href="index-de.html#drink">Deutsch</a>
               <a href="index-fr.html#drink">Français</a>
             </div>
-          </div>
-          <!-- <div class="stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div> -->
-          <input type="hidden" id="rating" name="rating" value="-1">
-          <div class="rating">
-            <i class="ratings_stars fa fa-star" data-rating="1"></i>
-            <i class="ratings_stars fa fa-star" data-rating="2"></i>
-            <i class="ratings_stars fa fa-star" data-rating="3"></i>
-            <i class="ratings_stars fa fa-star" data-rating="4"></i>
-            <i class="ratings_stars fa fa-star" data-rating="5"></i>
-            <button onClick="openPopup();" id="submitForm">Submit</button>
-              <div id="test" class="popup">
-                <p>Ваша оценка принята! Благодарность.</p>
-                <img id="smilee" src="img/Face-smile.png" alt="Smile">
-                <div class="cancel" onclick="closePopup();">X</div>
+          <div style="position: relative;">
+            <input type="hidden" id="rating" name="rating" value="-1" >
+            <div class="rating">
+              <i class="ratings_stars fa fa-star" data-rating="1"></i>
+              <i class="ratings_stars fa fa-star" data-rating="2"></i>
+              <i class="ratings_stars fa fa-star" data-rating="3"></i>
+              <i class="ratings_stars fa fa-star" data-rating="4"></i>
+              <i class="ratings_stars fa fa-star" data-rating="5"></i>
+              <!-- <button onClick="openPopup();" id="submitForm">Submit</button> -->
+            </div>
+            </div>
+            <div id="test" class="popup">
+              <p>Ваша оценка принята! Благодарность.</p>
+              <img id="smilee" src="img/Face-smile.png" alt="Smile">
+              <div class="cancel" onclick="closePopup();">X</div>
             </div>
           </div>
           <div class="search">
@@ -423,7 +420,6 @@ https://www.tooplate.com/view/2121-wave-cafe
       </div>    
     </div>
     <footer class="tm-site-footer">
-      <p class="tm-black-bg tm-footer-text">Все права @G.Duda99</p>
     </footer>
   </div>
     
