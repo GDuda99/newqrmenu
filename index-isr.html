@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Menu By G.Duda99</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/Style.css">
+    <!-- <script src="js/app.js"></script> -->
+<!--
+Tooplate 2121 Restaurant
+https://www.tooplate.com/view/2121-wave-cafe
+-->
+</head>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">מִסעָדָה</h1>
+            </div>
+            </div>
+            <body>
+            <div class="dropdown">
+              <div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+                <button onclick="myFunction()" class="dropbtn">עִברִית</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index-ka.html#drink">ქართული</a>
+                  <a href="index-de.html#drink">Deutsch</a>
+                  <a href="index-ru.html#drink">Русский</a>
+                  <a href="index-fr.html#drink">Français</a>
+                </div>
+              <div style="position: relative;">
+                <input type="hidden" id="rating" name="rating" value="-1" >
+                <div class="rating">
+                  <i class="ratings_stars fa fa-star" data-rating="1"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="2"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="3"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="4"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="5"></i>
+                  <!-- <button onClick="openPopup();" id="submitForm">Submit</button> -->
+                </div>
+            </div>
+            <div id="test" class="popup">
+              <p>הדירוג שלך התקבל</p>
+              <img id="smilee" src="img/Face-smile.png" alt="Smile">
+              <div class="cancel" onclick="closePopup();">X</div>
+            </div>
+          </div>
+          <div class="search">
+            <input id="searchsection" type="text" placeholder="לחפש...">
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link">
+                  <!-- <i class="fas fa-hamburger tm-page-link-icon"></i> -->
+                  <!-- <span>Menu</span> -->
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <!-- <i class="fas fa-users tm-page-link-icon"></i> -->
+                  <!-- <span>About Us</span> -->
+                </a>
+              </li>
+              <!-- <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                  <i class="fas fa-cheese tm-page-link-icon"></i>
+                  <span>Special Items</span>
+                </a>
+              </li>  -->
+              <li class="tm-page-nav-item">
+                 <a href="#contact" class="tm-page-link">
+                  <!-- <i class="fas fa-comments tm-page-link-icon"></i> -->
+                  <!-- <span>Contact</span> -->
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!-- Drink Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">כלי אוכל</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="hot">ארוחת בוקר</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">מַאֲפִיָה</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="deserts">מדבריות</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="drinks">מַשׁקָאוֹת</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">          
+                  <img src="./img/true-food-kitchen-35.png" alt="Image" class="tm-list-item-img" id="photo1">
+                </label>
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם המנה<span class="tm-list-item-price">$5.25</span></h3>
+                    <p class="tm-list-item-description">מרכיבים: מנגו: 20 גרם, אנאנס: 30 גרם, בשר: 50 גרם, לחם: 200 גרם, רוטב: 30 גרם</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">      
+                  <img src="./img/9-2-food-png-file.png" alt="Image" class="tm-list-item-img" id="photo2">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם המנה<span class="tm-list-item-price">$6.50</span></h3>
+                    <p class="tm-list-item-description">הנה רשימה של 4 פריטים או הוסף עוד. אתה יכול להשתמש בתבנית זו למטרות מסחריות.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">         
+                  <img src="./img/9-2-food-png-file.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם המנה<span class="tm-list-item-price">$5.25</span></h3>
+                    <p class="tm-list-item-description">אינך מורשה להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/54-547753_food-plate-png-top-view-food-plate-top.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם המנה<span class="tm-list-item-price">$7.50</span></h3>
+                    <p class="tm-list-item-description">התוכן מאורגן ל-3 כרטיסיות. אנא<a href="#" rel="nofollow" target="_parent">Giorgi Dudashvili</a>אם יש לך מה לשאול.</p>
+                  </div>
+                </div> 
+                <div class="tm-list-item">          
+                  <img src="./img/4-2-food-png-thumb.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם המנה<span class="tm-list-item-price">$9.50</span></h3>
+                    <p class="tm-list-item-description">התוכן מאורגן ל-3 כרטיסיות. אנא<a href="#" rel="nofollow" target="_parent">Giorgi Dudashvili</a>אם יש לך מה לשאול.</p>
+                  </div>
+                </div> 
+                <div class="tm-list-item">          
+                  <img src="./img/214-2142431_plate-of-food-png-food-plate-png-top.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם המנה<span class="tm-list-item-price">$6.50</span></h3>
+                    <p class="tm-list-item-description">התוכן מאורגן ל-3 כרטיסיות. אנא<a href="#" rel="nofollow" target="_parent">Giorgi Dudashvili</a>אם יש לך מה לשאול.</p>
+                  </div>
+                </div> 
+                                       
+              </div>
+            </div> 
+
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
+              
+                <div class="tm-list-item">          
+                  <img src="./img/928.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$8.50</span></h3>
+                    <p class="tm-list-item-description">להלן תיאור קצר לפריט יחד עם תמונה ממוזערת בריבוע.</p>              
+                  </div>
+                </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/25993-9-breakfast-file-thumb.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$7.50</span></h3>
+                    <p class="tm-list-item-description">הלוגו בצד שמאל והתפריט הראשי קבועים. רקע הסרטון קבוע.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/25976-5-breakfast-photo-thumb.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$6.50</span></h3>
+                    <p class="tm-list-item-description">תוכן העמוד מאורגן ב-3 כרטיסיות כדי להציג רשימות שונות של פריטים.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/25787-1-breakfast-transparent-background-thumb.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$6.50</span></h3>
+                    <p class="tm-list-item-description">תוכן העמוד מאורגן ב-3 כרטיסיות כדי להציג רשימות שונות של פריטים.</p>              
+                  </div>
+                </div>
+                         
+              </div>
+            </div>
+
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="./img/170107-food-bakery-hd-image-free-thumb.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם אוכל אפוי<span class="tm-list-item-price">$3.25</span></h3>
+                    <p class="tm-list-item-description">להלן תיאור קצר לפריט יחד עם תמונה ממוזערת בריבוע.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/170110-bakery-png-image-high-quality-thumb.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם אוכל אפוי<span class="tm-list-item-price">$3.75</span></h3>
+                    <p class="tm-list-item-description">הנה רשימה של 4 פריטים או הוסף עוד. אתה יכול להשתמש בתבנית זו למטרות מסחריות.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/7043-Ranger-Cookies-6pack.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם אוכל אפוי<span class="tm-list-item-price">$3.50</span></h3>
+                    <p class="tm-list-item-description">הלוגו בצד שמאל והתפריט הראשי קבועים. רקע הסרטון קבוע.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="./img/DSC05196-1.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם אוכל אפוי<span class="tm-list-item-price">$4.20</span></h3>
+                    <p class="tm-list-item-description">אינך רשאי להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>              
+                  </div>
+                </div> 
+                <div class="tm-list-item">          
+                  <img src="./img/watercolor-bakery-cookie-png.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">שם אוכל אפוי<span class="tm-list-item-price">$2.90</span></h3>
+                    <p class="tm-list-item-description">אינך רשאי להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>              
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+
+          <div id="deserts" class="tm-tab-content">
+            <div class="tm-list">
+              <div class="tm-list-item">          
+                <img src="./img/sweet-food-clip-art-images-30.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם המדבר<span class="tm-list-item-price">$4.50</span></h3>
+                  <p class="tm-list-item-description">להלן תיאור קצר לפריט יחד עם תמונה ממוזערת בריבוע.</p>              
+                </div>
+              </div>
+              <div class="tm-list-item">          
+                <img src="./img/65a23adbee82a2e8dcd8eaeb3d1368cb.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם המדבר<span class="tm-list-item-price">$3.50</span></h3>
+                  <p class="tm-list-item-description">הנה רשימה של 4 פריטים או הוסף עוד. אתה יכול להשתמש בתבנית זו למטרות מסחריות.</p>                    
+                </div>
+              </div>
+              <div class="tm-list-item">          
+                <img src="./img/1006.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם המדבר<span class="tm-list-item-price">$2.50</span></h3>
+                  <p class="tm-list-item-description">הלוגו בצד שמאל והתפריט הראשי קבועים. רקע הסרטון קבוע.</p>              
+                </div>
+              </div>
+              <div class="tm-list-item">          
+                <img src="./img/1-2-sweets-png-clipart-thumb.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם המדבר<span class="tm-list-item-price">$4.50</span></h3>
+                  <p class="tm-list-item-description">אינך רשאי להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>              
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div id="drinks" class="tm-tab-content">
+          <div class="tm-list">
+            <div class="tm-list-item">          
+              <img src="./img/Cola.png" alt="Image" class="tm-list-item-img">
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">קוקה קולה<span class="tm-list-item-price">$1.25</span></h3>
+                <p class="tm-list-item-description">להלן תיאור קצר לפריט יחד עם תמונה ממוזערת בריבוע.</p>              
+              </div>
+            </div>
+            <div class="tm-list-item">          
+              <img src="./img/Fresh.png" alt="Image" class="tm-list-item-img">
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">משקה טרי<span class="tm-list-item-price">$2.00</span></h3>
+                <p class="tm-list-item-description">הנה רשימה של 4 פריטים או הוסף עוד. אתה יכול להשתמש בתבנית זו למטרות מסחריות.</p>                    
+              </div>
+            </div>
+            <div class="tm-list-item">          
+              <img src="./img/Mojito.png" alt="Image" class="tm-list-item-img">
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">מוחיטו<span class="tm-list-item-price">$2.00</span></h3>
+                <p class="tm-list-item-description">הלוגו בצד שמאל והתפריט הראשי קבועים. רקע הסרטון קבוע.</p>              
+              </div>
+            </div>
+            <div class="tm-list-item">          
+              <img src="./img/Beer.png" alt="Image" class="tm-list-item-img">
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">בירה<span class="tm-list-item-price">$1.50</span></h3>
+                <p class="tm-list-item-description">אינך רשאי להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>              
+              </div>
+            </div>  
+            <div class="tm-list-item">          
+              <img src="./img/Cosmo.png" alt="Image" class="tm-list-item-img">
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">קוסמו<span class="tm-list-item-price">$4.00</span></h3>
+                <p class="tm-list-item-description">אינך רשאי להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>              
+              </div>
+            </div>
+            <div class="tm-list-item">          
+              <img src="./img/Wine.png" alt="Image" class="tm-list-item-img">
+              <div class="tm-black-bg tm-list-item-text">
+                <h3 class="tm-list-item-name">יין אדום<span class="tm-list-item-price">$5.00</span></h3>
+                <p class="tm-list-item-description">אינך רשאי להפיץ מחדש את קובץ ה-ZIP של התבנית באתרי תבניות אחרים.</p>              
+              </div>
+            </div>            
+          </div>
+        </div>
+        <!-- end Drink Menu Page -->
+      </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">על מסעדה</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/about-1.png" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>מסעדה היא תבנית HTML CSS ברקע של עמוד אחד מ-Tooplate. אתה יכול להשתמש בזה עבור אתרי האינטרנט של העסק שלך.</p>
+                  <p>אתה יכול גם להשתמש בזה עבור אתרי הלקוחות שלך שאתה מקבל תשלום עבור שירותי האתר שלך. אנא ספר לחבריך עלינו.</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">איך התחלנו</h2>
+                  <p>אם אתה רוצה לתמוך בנו, בבקשה גיורגי דודשווילי. תודה. ם אתה רוצה לתמוך בנו, בבקשה גיורגי דודשווילי. תודה.</p>                  
+                </div>                
+                <img src="img/about-2.png" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>ם אתה רוצה לתמוך בנו, בבקשה גיורגי דודשווילי. תודה. ם אתה רוצה לתמוך בנו, בבקשה גיורגי דודשווילי. תודה.ם אתה רוצה לתמוך בנו, בבקשה גיורגי דודשווילי. תודה. ם</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+<!-- gallery -->
+          <div id="hot" class="tm-tab-content">
+            <div class="tm-list">
+            
+              <div class="tm-list-item">          
+                <img src="./img/928.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$8.50</span></h3>
+                  <p class="tm-list-item-description">להלן תיאור קצר לפריט יחד עם תמונה ממוזערת בריבוע.</p>              
+                </div>
+              </div>
+              </div>
+              <div class="tm-list-item">          
+                <img src="./img/25993-9-breakfast-file-thumb.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$7.50</span></h3>
+                  <p class="tm-list-item-description">הלוגו בצד שמאל והתפריט הראשי קבועים. רקע הסרטון קבוע.</p>              
+                </div>
+              </div>
+              <div class="tm-list-item">          
+                <img src="./img/25976-5-breakfast-photo-thumb.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$6.50</span></h3>
+                  <p class="tm-list-item-description">תוכן העמוד מאורגן ב-3 כרטיסיות כדי להציג רשימות שונות של פריטים.</p>              
+                </div>
+              </div>
+              <div class="tm-list-item">          
+                <img src="./img/25787-1-breakfast-transparent-background-thumb.png" alt="Image" class="tm-list-item-img">
+                <div class="tm-black-bg tm-list-item-text">
+                  <h3 class="tm-list-item-name">שם ארוחת הבוקר<span class="tm-list-item-price">$6.50</span></h3>
+                  <p class="tm-list-item-description">תוכן העמוד מאורגן ב-3 כרטיסיות כדי להציג רשימות שונות של פריטים.</p>              
+                </div>
+              </div>
+                       
+            </div>
+          </div>
+          <!-- gallery -->
+          <!-- Special Items Page -->
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-01.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Georgian Breakfast</h2>
+                  <p class="tm-special-item-text">Here is a short text description for the first special item. You are not allowed to redistribute this template ZIP file.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-02.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Signature Croissant</h2>
+                  <p class="tm-special-item-text">You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-03.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Signature Burger</h2>
+                  <p class="tm-special-item-text">Pellentesque in ultrices mi, quis mollis nulla. Quisque sed commodo est, quis tincidunt nunc.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-04.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special Breakfast</h2>
+                  <p class="tm-special-item-text">Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>  
+                </div>
+              </div>      
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-05.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Vegan Breakfast</h2>
+                  <p class="tm-special-item-text">Here is a short text description for sixth item. This text is four lines.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-06.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Easy Lunch</h2>
+                  <p class="tm-special-item-text">Curabitur eget erat sit amet sapien aliquet vulputate quis sed arcu.</p>  
+                </div>
+              </div>                      
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">צרו קשר עם המסעדה</h2>
+              <p>לתבנית מסעדה יש רקע וידאו. אתה יכול להשתמש בפריסה זו עבור אתרי האינטרנט שלך. בבקשה את עמוד הפייסבוק של גיורגי דודשווילי. ספר לחברים שלך על האתר שלנו.</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+                <div class="phonenumber">
+                  <i class="fa fa-phone">&nbsp;&nbsp;544-44-88-98</i>
+                </div>
+                <br>
+                <div class="email">
+                  <i class="fa fa-envelope">&nbsp;&nbsp;GiorgiDudashvili4@gmail.com</i>
+                </div>
+                <br>
+                <div class="location">
+                  <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;ואזה-פשבלה №71</i>
+                </div>
+            </div>
+            <br>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                  <div class="contactinfo">
+                    
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+    </footer>
+  </div>
+    
+  <!-- Background video -->
+  <!-- <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+  </div> -->
+  <div class="footerbackground">
+    <div class="footermenu">
+      <a href="#drink" class="tm-page-link">
+        <i class='fas fa-hamburger' style='color: #999337; font-size: 40px; margin-top: 2%; margin-left: 7%; position: relative;'></i>
+      </a>
+    </div>
+  <div class="footerabout">
+    <a href="#about" class="tm-page-link">
+      <i class='fas fa-users' style='color:#999337; font-size:40px; top: -41px; margin-left: 43%; position: relative;'></i>
+    </a>
+  </div>
+  <div class="footercontact">
+    <a href="#contact" class="tm-page-link">
+      <i class='fas fa-comments' style='color:#999337; font-size:40px; top: -82px; margin-left: 81%; position: relative;'></i>
+    </a>
+  </div>
+</div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/app.js"></script>    
+</body>
+</html>
