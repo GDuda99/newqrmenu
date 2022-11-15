@@ -26,35 +26,31 @@ https://www.tooplate.com/view/2121-wave-cafe
             </div>
             <body>
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">English</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="index-ka.html#drink">ქართული</a>
-                <a href="index-de.html#drink">Deutsch</a>
-                <a href="index-ru.html#drink">Русский</a>
-                <a href="index-fr.html#drink">Français</a>
-              </div>
+              <div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+                <button onclick="myFunction()" class="dropbtn">English</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index-ka.html#drink">ქართული</a>
+                  <a href="index-de.html#drink">Deutsch</a>
+                  <a href="index-ru.html#drink">Русский</a>
+                  <a href="index-fr.html#drink">Français</a>
+                </div>
+              <div style="position: relative;">
+                <input type="hidden" id="rating" name="rating" value="-1" >
+                <div class="rating">
+                  <i class="ratings_stars fa fa-star" data-rating="1"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="2"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="3"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="4"></i>
+                  <i class="ratings_stars fa fa-star" data-rating="5"></i>
+                  <!-- <button onClick="openPopup();" id="submitForm">Submit</button> -->
+                </div>
             </div>
-            <!-- <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div> -->
-            <input type="hidden" id="rating" name="rating" value="-1">
-            <div class="rating">
-              <i class="ratings_stars fa fa-star" data-rating="1"></i>
-              <i class="ratings_stars fa fa-star" data-rating="2"></i>
-              <i class="ratings_stars fa fa-star" data-rating="3"></i>
-              <i class="ratings_stars fa fa-star" data-rating="4"></i>
-              <i class="ratings_stars fa fa-star" data-rating="5"></i>
-              <button onClick="openPopup();" id="submitForm">Submit</button>
-              <div id="test" class="popup">
-                <p>Your Rating Has Been Accepted</p>
-                <img id="smilee" src="img/Face-smile.png" alt="Smile">
-                <div class="cancel" onclick="closePopup();">X</div>
+            <div id="test" class="popup">
+              <p>Your Rating Has Been Accepted</p>
+              <img id="smilee" src="img/Face-smile.png" alt="Smile">
+              <div class="cancel" onclick="closePopup();">X</div>
             </div>
-            </div>
+          </div>
           <div class="search">
             <input id="searchsection" type="text" placeholder="Search...">
           </div>
@@ -439,6 +435,20 @@ https://www.tooplate.com/view/2121-wave-cafe
               <p>Restaurant Template has a video background. You can use this layout for your websites. Please Giorgi Dudashvili's Facebook page. Tell your friends about our website.</p>
             </div>
             <div class="tm-black-bg tm-contact-form-container tm-align-right">
+                <div class="phonenumber">
+                  <i class="fa fa-phone">&nbsp;&nbsp;544-44-88-98</i>
+                </div>
+                <br>
+                <div class="email">
+                  <i class="fa fa-envelope">&nbsp;&nbsp;GiorgiDudashvili4@gmail.com</i>
+                </div>
+                <br>
+                <div class="location">
+                  <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;Vazha-Pshavela 71</i>
+                </div>
+            </div>
+            <br>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
               <form action="" method="POST" id="contact-form">
                 <div class="tm-form-group">
                   <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
@@ -465,7 +475,6 @@ https://www.tooplate.com/view/2121-wave-cafe
       </div>    
     </div>
     <footer class="tm-site-footer">
-      <p class="tm-black-bg tm-footer-text">All Right Received @G.Duda99</p>
     </footer>
   </div>
     
