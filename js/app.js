@@ -4,12 +4,10 @@ window.addEventListener('load', () => {
     }
 })
 function openPopup() {
-    console.log('open');
     document.getElementById('test').style.display = 'block';
 }
 
 function closePopup() {
-    console.log(1111);
     document.getElementById('test').style.display = 'none';
 }
 
